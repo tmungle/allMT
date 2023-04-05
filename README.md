@@ -9,23 +9,24 @@
 [![Travis build
 status](https://travis-ci.com/tmungle/allMT.svg?branch=master)](https://travis-ci.com/tmungle/allMT)
 [![R-CMD-check](https://github.com/tmungle/allMT/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/tmungle/allMT/actions/workflows/R-CMD-check.yaml)
+
 <!-- badges: end -->
 
 ## Introduction
 
-Studies across the globe have shown that delivering optimal maintenance
-therapy (MT) is crucial to achieve better treatment outcomes in acute
-lymphoblastic leukemia (ALL)
-[\[1\]](#ref-schmiegelow2014mercaptopurine). Delivering optimal MT
-includes prescribing maximum tolerated doses of 6-mercaptopurine (6MP)
-and methotraxate (MTX) based on patient’s blood counts (absolute
-neutrophil count (ANC), platelet count (PLT) and hemoglobin (HB)). In
-view of this, the *allMT* package was created to analyse and visualize
-the MT data (ANC/PLT/HB/6MP/MTX) for single patient or a given cohort at
-any center[^1]. The package was developed considering the ICiCLe-ALL-14
-protocol [\[3\]](#ref-das2022protocol) as default. It can be used to
-analyze data from centers with different MT protocols where in the user
-will need to alter the function defined ipnut argument/parameters.
+Acute lymphoblastic leukemia (ALL) studies across the globe have shown
+that delivering optimal maintenance therapy (MT) is crucial to achieve
+better treatment outcomes [\[1\]](#ref-schmiegelow2014mercaptopurine).
+Delivering optimal MT includes prescribing maximum tolerated doses of
+6-mercaptopurine (6MP) and methotraxate (MTX) based on patient’s blood
+counts (absolute neutrophil count (ANC), platelet count (PLT) and
+hemoglobin (HB)). In view of this, the *allMT* package was created to
+analyse and visualize the MT data (ANC/PLT/HB/6MP/MTX) for single
+patient or a given cohort at any center[^1]. The package was developed
+considering the ICiCLe-ALL-14 protocol [\[3\]](#ref-das2022protocol) as
+default. It can be used to analyze data from centers with different MT
+protocols where in the user will need to alter the function defined
+ipnut argument/parameters.
 
 ## Package
 

@@ -56,7 +56,7 @@ Maintenance therapy (MT), the longest phase of ALL treatment consists of \~2 yea
 
 # Package
 
-Studies across the globe have shown that delivering optimal MT is crucial to achieve better treatment outcomes [@schmiegelow2014mercaptopurine]. Delivering optimal MT is ensured by prescribing maximum tolerated 6MP and MTX doses that are adjusted patient's hospital visit. In view of this, the package was created to analyse and visualize the ALL MT data (ANC/PLT/HB/6MP/MTX)[^1]. The use of package would assist physicians to evaluate MT for a given patient or a cohort at any center. Although, the package was developed considering the ICiCLe-ALL-14 protocol [@das2022protocol] as default, it can be used to analyze data from centers with different MT protocols. In case of different protocol, the user will need to alter the defined parameters specific to protocol as function arguments.
+ALL studies, across the globe, have shown that delivering optimal MT is crucial to achieve better treatment outcomes [@schmiegelow2014mercaptopurine]. Delivering optimal MT is ensured by prescribing maximum tolerated 6MP and MTX doses that are adjusted patient's hospital visit. In view of this, the package was created to analyse and visualize the ALL MT data (ANC/PLT/HB/6MP/MTX)[^1]. The use of package would assist physicians to evaluate MT for a given patient or a cohort at any center. Although, the package was developed considering the ICiCLe-ALL-14 protocol [@das2022protocol] as default, it can be used to analyze data from centers with different MT protocols. In case of different protocol, the user will need to alter the defined parameters specific to protocol as function arguments.
 
 [^1]: The work was initiated as part of Tushar Mungle's PhD at IIT Kharagpur [@mungle2020modelling] and then continued at TTCRC, Tata Medical Center, Kolkata.
 
@@ -106,19 +106,7 @@ Using this package the user may:
 
     Data can be checked or saved as
 
-    ```{r}
-    # Please uncomment the R code
-    # Read the data
-    # data(UPN_915)
-    # head(UPN_915)
 
-    # Below code should work for any user independent of OS
-    #pat_data <- system.file("extdata/processed_data", "UPN_915.csv", package = "allMT")
-    #pat_df <-read.csv(pat_data, header = TRUE, sep = ",")
-    #head(pat_df)
-
-
-    ```
 
 [^2]: Ethics approval statement: The anonymized clinical data set refers to patients treated on the ICiCLe-ALL-14 treatment protocol at the Tata Medical Center Kolkata (institutional review board approval EC/TMC/12/13 for the treatment protocol). Funding support for the ICiCLe-ALL-14 clinical study (Clinical Trials Registry-India reference CTRI/2015/12/006434) was provided by the National Cancer Grid (2016/001; 2016-) and the Indian Council of Medical Research (79/159/2015/NCD-III; 2017-19).
 
