@@ -106,8 +106,6 @@ Using this package the user may:
 
     Data can be checked or saved as
 
-
-
 [^2]: Ethics approval statement: The anonymized clinical data set refers to patients treated on the ICiCLe-ALL-14 treatment protocol at the Tata Medical Center Kolkata (institutional review board approval EC/TMC/12/13 for the treatment protocol). Funding support for the ICiCLe-ALL-14 clinical study (Clinical Trials Registry-India reference CTRI/2015/12/006434) was provided by the National Cancer Grid (2016/001; 2016-) and the Indian Council of Medical Research (79/159/2015/NCD-III; 2017-19).
 
 ------------------------------------------------------------------------
