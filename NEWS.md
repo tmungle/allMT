@@ -1,3 +1,3 @@
 # allMT 0.0.0.9000
 
-* Added a `NEWS.md` file to track changes to the package.
+-   We are pleased to announce ***allMT*** package (version 0.0.0.9000) to analyze maintenance therapy data for acute lymphoblastic leukemia.
