@@ -4,9 +4,6 @@
 # allMT
 
 <!-- badges: start -->
-
-[![R-CMD-check](https://github.com/tmungle/allMT/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/tmungle/allMT/actions/workflows/R-CMD-check.yaml)
-
 <!-- badges: end -->
 
 ## Introduction
@@ -99,8 +96,8 @@ Council of Medical Research (79/159/2015/NCD-III; 2017-19)
 
 By abiding to [Contributor Code of
 Conduct](https://www.contributor-covenant.org/version/2/1/code_of_conduct/),
-contribution to `allMT` in any form (bug fixes/code modification/new
-code development) is welcomed.
+contribution to `allMT` in any form bug fixes/code modification/new code
+development is welcomed.
 
 ## References
 
