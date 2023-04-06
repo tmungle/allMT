@@ -19,8 +19,8 @@ vignette: >
   %\VignetteIndexEntry{Analyze Acute Lymphoblastic Leukemia Maintenance Therapy}
   %\VignetteEncoding{UTF-8}
   %\VignetteEngine{knitr::rmarkdown}
-# bibliography: references.bib
-# csl: ieee.csl
+bibliography: references.bib
+csl: ieee.csl
 link-citations: true
 # css: "../styles.css"
 editor_options: 

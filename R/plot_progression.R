@@ -23,7 +23,7 @@
 #' plot_progression(input_file_path = pat_data, anc_range = c(0.75,1.5), unit = "billion")
 #'
 #' \dontrun{
-#'As per BFM protocol (Reference PMID - 15902295):
+#'# As per BFM protocol (Reference PMID - 15902295):
 #'plot_progression(input_file_path = "../UPN1.csv", anc_range = c(2, NA), unit = "billion")
 #'
 #'# As per St Jude protocol (Reference PMID - 15902295):

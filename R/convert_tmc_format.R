@@ -14,27 +14,27 @@
 #'
 #' @seealso [convert_external_format()]
 #' @examples
-#'# As per ICiCLe-ALL-14 protocol (Reference PMID - 35101099):
-#'path_to_excel = paste0(system.file("extdata/tmc_data/", package = "allMT"), "/")
-#'save_path = paste0(path.expand('~'), "/")
-#'convert_tmc_format(inputpath_to_excelfolder = path_to_excel,
+#' # As per ICiCLe-ALL-14 protocol (Reference PMID - 35101099):
+#' path_to_excel = paste0(system.file("extdata/tmc_data/", package = "allMT"), "/")
+#' save_path = paste0(path.expand('~'), "/")
+#' convert_tmc_format(inputpath_to_excelfolder = path_to_excel,
 #'                    exportpath_to_csvfolder = save_path,
 #'                    daily_mp_dose = 60,
 #'                    weekly_mtx_dose = 20)
 #' \dontrun{
 #'
-#'# As per ICiCLe-ALL-14 protocol (Reference PMID - 35101099):
-#'convert_tmc_format(inputpath_to_excelfolder = path_to_excel,
+#' # As per ICiCLe-ALL-14 protocol (Reference PMID - 35101099):
+#' convert_tmc_format(inputpath_to_excelfolder = path_to_excel,
 #'                    exportpath_to_csvfolder = save_path)
 #'
-#'# As per BFM protocol (Reference PMID - 15902295):
-#'convert_tmc_format(inputpath_to_excelfolder = path_to_excel,
+#' # As per BFM protocol (Reference PMID - 15902295):
+#' convert_tmc_format(inputpath_to_excelfolder = path_to_excel,
 #'                    exportpath_to_csvfolder = save_path,
 #'                    daily_mp_dose = 50,
 #'                    weekly_mtx_dose = 20)
 #'
-#'# As per St Jude protocol (Reference PMID - 15902295):
-#'convert_tmc_format(inputpath_to_excelfolder = path_to_excel,
+#' # As per St Jude protocol (Reference PMID - 15902295):
+#' convert_tmc_format(inputpath_to_excelfolder = path_to_excel,
 #'                    exportpath_to_csvfolder = save_path,
 #'                    daily_mp_dose = 75,
 #'                    weekly_mtx_dose = 40)
@@ -69,10 +69,12 @@ convert_tmc_format <- function(inputpath_to_excelfolder, exportpath_to_csvfolder
         # Reading MT workbook file
         if(!is.na(stringr::str_detect(MR_list[a], ".xlsx"))) {
           pat_df <- suppressWarnings({suppressMessages({rio::import_list(paste0(excel_folder_path,MR_list[a]))})})
+
         }
 
         if(!is.na(stringr::str_detect(MR_list[a], ".xls")) ){
           pat_df <- suppressWarnings({suppressMessages({rio::import_list(paste0(excel_folder_path,MR_list[a]))})})
+
         }
 
         if(!is.na(stringr::str_detect(MR_list[a], ".xlsm"))){
@@ -82,24 +84,31 @@ convert_tmc_format <- function(inputpath_to_excelfolder, exportpath_to_csvfolder
           pat_df <- lapply(tibble, as.data.frame)
           names(pat_df) <- sheets
           rm(tibble)
+
         }
 
         # Extracting global patient information
         Patient_no <- pat_df[["Cycle1"]][1,4]
+        print(Patient_no)
         Height <- pat_df[["Cycle1"]][2,2]
+        print(Height)
         Weight <- pat_df[["Cycle1"]][3,2]
+        print(Weight)
         BSA <- pat_df[["Cycle1"]][4,2]
+        print(BSA)
         Start_date <- format(as.Date(as.numeric(pat_df[["Cycle1"]][5,3]),
                                      origin = '1899-12-30'), '%d/%m/%Y')
+        print(Start_date)
         max_MP <- as.numeric((pat_df[["Cycle1"]][[4,2]])*(daily_mp_dose*7))
+        print(max_MP)
         max_MTX <- as.numeric((pat_df[["Cycle1"]][[4,2]])*(weekly_mtx_dose))
+        print(max_MTX)
 
         Cycle <- MP <-  Dates <- MP_adj <- MTX <-NULL
 
         # Per cycle:
         all_data <- NULL
         for(i in seq(pat_df)){
-
           # Transposing data frame
           data_transposed_0 <- data.frame(t(pat_df[[i]]), stringsAsFactors = FALSE)
           data_transposed <- data_transposed_0[3:nrow(data_transposed_0), 5:13]
@@ -119,7 +128,7 @@ convert_tmc_format <- function(inputpath_to_excelfolder, exportpath_to_csvfolder
             dplyr::mutate(Cycle = i) %>%
             dplyr::relocate(Cycle, .before = Dates) %>%
             dplyr::filter(!is.na(coloumns$Dates) & !is.na(coloumns$Weeks) & !is.na(coloumns$ANC)
-                          & !is.na(coloumns$PLT) & !is.na(coloumns$MP) & !is.na(coloumns$MTX)  & !is.na(coloumns$Hb))
+                          & !is.na(coloumns$MP) & !is.na(coloumns$MTX))
 
 
           # Combining data for all cycles
