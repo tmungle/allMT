@@ -197,6 +197,11 @@ library for viewing. Additionally, UPN_914, UPN_915, UPN_916, UPN_917
 and UPN_918 are present under the folder “/extdata/processed_data/” as
 csv format to run any examples.</p>
 <p>Data can be checked or saved as</p>
+<div class="sourceCode" id="cb3"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="co"># Below code should work for any user independent of OS</span></span>
+<span><span class="co"># pat_data &lt;- system.file("extdata/processed_data/", "UPN_916.csv", package = "allMT")</span></span>
+<span><span class="co"># pat_df &lt;- utils::read.csv(pat_data, header = TRUE, sep = ",")</span></span>
+<span><span class="co"># # head(pat_df)</span></span></code></pre></div>
 </li>
 </ol>
 <hr>
