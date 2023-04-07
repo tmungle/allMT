@@ -20,7 +20,7 @@ vignette: >
   %\VignetteEncoding{UTF-8}
   %\VignetteEngine{knitr::rmarkdown}
 Encoding: UTF-8
-# bibliography: references.bib
+bibliography: ../inst/doc/references.bib
 csl: ieee.csl
 link-citations: true
 # css: "../styles.css"
