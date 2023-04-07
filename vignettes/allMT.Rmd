@@ -106,6 +106,14 @@ Using this package the user may:
 2.  To use functions of the package, the data needs to be in a specific format as described in below example. Sample data[^2] for 3 individual patient is available as UPN_914, UPN_915, and UPN_916 as rda with the library for viewing. Additionally, UPN_914, UPN_915, UPN_916, UPN_917 and UPN_918 are present under the folder "/extdata/processed_data/" as csv format to run any examples.
 
     Data can be checked or saved as
+    
+    ```{r}
+    # Below code should work for any user independent of OS
+    # pat_data <- system.file("extdata/processed_data/", "UPN_916.csv", package = "allMT")
+    # pat_df <- utils::read.csv(pat_data, header = TRUE, sep = ",")
+    # # head(pat_df)
+
+    ```
 
 [^2]: Ethics approval statement: The anonymized clinical data set refers to patients treated on the ICiCLe-ALL-14 treatment protocol at the Tata Medical Center Kolkata (institutional review board approval EC/TMC/12/13 for the treatment protocol). Funding support for the ICiCLe-ALL-14 clinical study (Clinical Trials Registry-India reference CTRI/2015/12/006434) was provided by the National Cancer Grid (2016/001; 2016-) and the Indian Council of Medical Research (79/159/2015/NCD-III; 2017-19).
 
