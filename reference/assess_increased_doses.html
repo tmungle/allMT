@@ -10,7 +10,7 @@
     
     <a class="navbar-brand me-2" href="../index.html">allMT</a>
 
-    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.0.0.9000</small>
+    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.1.0</small>
 
     
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -188,64 +188,13 @@ following which dose should be increased.</p></dd>
 <span class="r-out co"><span class="r-pr">#&gt;</span> &lt;/tr&gt;</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> &lt;/tbody&gt;</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> &lt;/table&gt;</span>
+<span class="r-in"><span><span class="kw">if</span> <span class="op">(</span><span class="cn">FALSE</span><span class="op">)</span> <span class="op">{</span></span></span>
 <span class="r-in"><span></span></span>
 <span class="r-in"><span><span class="va">pat_data</span> <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/system.file.html" class="external-link">system.file</a></span><span class="op">(</span><span class="st">"extdata/processed_data/"</span>, <span class="st">"UPN_914.csv"</span>, package <span class="op">=</span> <span class="st">"allMT"</span><span class="op">)</span></span></span>
 <span class="r-in"><span><span class="fu">assess_increased_doses</span> <span class="op">(</span>input_files_path <span class="op">=</span> <span class="va">pat_data</span>, anc_threshold <span class="op">=</span> <span class="fl">0.75</span>,</span></span>
 <span class="r-in"><span>                      plt_threshold <span class="op">=</span> <span class="fl">75</span>, hb_threshold <span class="op">=</span> <span class="fl">8</span>,</span></span>
 <span class="r-in"><span>                      escalation_factor <span class="op">=</span> <span class="fl">15</span>, tolerated_dose_duration <span class="op">=</span> <span class="fl">6</span><span class="op">)</span></span></span>
-<span class="r-msg co"><span class="r-pr">#&gt;</span> NOTE: Analyzing provided input file only</span>
-<span class="r-msg co"><span class="r-pr">#&gt;</span> NOTE: Analysis will be carried out with provided parameters: anc_threshold, plt_threshold and hb_threshold</span>
-<span class="r-msg co"><span class="r-pr">#&gt;</span> Quitting</span>
-<span class="r-msg co"><span class="r-pr">#&gt;</span> Bye Bye: Did you know that 1 million Earths can fit into the sun :)?</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> [[1]]</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>        ID Total no. of times counts recommended a dose increase</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 1 UPN_914                                                     3</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>   Total no. of 'DOSE INCREASE' decisions Discordance (%)</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 1                                      1          66.67%</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> [[2]]</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> =====================================================  =======</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> Parameter                                              Result </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> =====================================================  =======</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> ID                                                     UPN_914</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> Total no. of times counts recommended a dose increase  3      </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> Total no. of 'DOSE INCREASE' decisions                 1      </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> Discordance (%)                                        66.67% </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> =====================================================  =======</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> [[3]]</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> &lt;table class='gmisc_table' style='border-collapse: collapse; margin-top: 1em; margin-bottom: 1em;' &gt;</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> &lt;thead&gt;</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> &lt;tr&gt;&lt;td colspan='2' style='text-align: left;'&gt;</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> Table: 'INCREASE DOSE' analysis&lt;/td&gt;&lt;/tr&gt;</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> &lt;tr&gt;</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> &lt;th style='background-color: #e6e6e6; border-bottom: 1px solid grey; border-top: 2px solid grey; text-align: center;'&gt;Parameter&lt;/th&gt;</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> &lt;th style='background-color: #e6e6e6; border-bottom: 1px solid grey; border-top: 2px solid grey; text-align: center;'&gt;Result&lt;/th&gt;</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> &lt;/tr&gt;</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> &lt;/thead&gt;</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> &lt;tbody&gt;</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> &lt;tr style='background-color: #ffffff;'&gt;</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> &lt;td style='width: 200px; background-color: #ffffff; text-align: left;'&gt;ID&lt;/td&gt;</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> &lt;td style='width: 200px; background-color: #ffffff; text-align: center;'&gt;UPN_914&lt;/td&gt;</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> &lt;/tr&gt;</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> &lt;tr style='background-color: #e6e6e6;'&gt;</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> &lt;td style='width: 200px; background-color: #e6e6e6; text-align: left;'&gt;Total no. of times counts recommended a dose increase&lt;/td&gt;</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> &lt;td style='width: 200px; background-color: #e6e6e6; text-align: center;'&gt;3&lt;/td&gt;</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> &lt;/tr&gt;</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> &lt;tr style='background-color: #ffffff;'&gt;</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> &lt;td style='width: 200px; background-color: #ffffff; text-align: left;'&gt;Total no. of 'DOSE INCREASE' decisions&lt;/td&gt;</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> &lt;td style='width: 200px; background-color: #ffffff; text-align: center;'&gt;1&lt;/td&gt;</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> &lt;/tr&gt;</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> &lt;tr style='background-color: #e6e6e6;'&gt;</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> &lt;td style='width: 200px; background-color: #e6e6e6; border-bottom: 2px solid grey; text-align: left;'&gt;Discordance (%)&lt;/td&gt;</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> &lt;td style='width: 200px; background-color: #e6e6e6; border-bottom: 2px solid grey; text-align: center;'&gt;66.67%&lt;/td&gt;</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> &lt;/tr&gt;</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> &lt;/tbody&gt;</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> &lt;/table&gt;</span>
 <span class="r-in"><span></span></span>
-<span class="r-in"><span><span class="kw">if</span> <span class="op">(</span><span class="cn">FALSE</span><span class="op">)</span> <span class="op">{</span></span></span>
 <span class="r-in"><span><span class="fu">assess_increased_doses</span><span class="op">(</span>input_files_path <span class="op">=</span> <span class="va">cohort_path</span>,</span></span>
 <span class="r-in"><span>                      anc_threshold <span class="op">=</span> <span class="fl">0.7</span>, plt_threshold <span class="op">=</span> <span class="fl">60</span><span class="op">)</span></span></span>
 <span class="r-in"><span><span class="op">}</span></span></span>
