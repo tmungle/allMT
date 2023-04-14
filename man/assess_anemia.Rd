@@ -37,15 +37,16 @@ Evaluate number of anemia episodes and their duration for a given patient or coh
 \examples{
 pat_data = system.file("extdata/processed_data/", "UPN_915.csv", package = "allMT")
 assess_anemia(input_files_path = pat_data,
-                      hb_range = c(0.5, 0.75), duration_hb = 3)
+                      hb_range = c(7, 8), duration_hb = 3)
+
+\dontrun{
 
 cohort_path = paste0(system.file("extdata/processed_data/", package = "allMT"), "/")
 assess_anemia(input_files_path = cohort_path,
-                      hb_range = c(0.5, 0.75), duration_hb = 3)
+                      hb_range = c(7, 8), duration_hb = 3)
 
-\dontrun{
 result <- assess_anemia(input_files_path = pat_data,
-                      hb_range = c(0.5, 0.75), duration_hb = 3)
+                      hb_range = c(7, 8), duration_hb = 3)
 print(result[[1]])
 print(result[[2]])
 print(result[[3]])

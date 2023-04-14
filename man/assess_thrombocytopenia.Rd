@@ -39,11 +39,12 @@ pat_data = system.file("extdata/processed_data/", "UPN_914.csv", package = "allM
 assess_thrombocytopenia(input_files_path = pat_data,
                       plt_range = c(50, 75), duration_plt = 3)
 
+\dontrun{
 cohort_path = paste0(system.file("extdata/processed_data/", package = "allMT"), "/")
 assess_thrombocytopenia(input_files_path = cohort_path,
                       plt_range = c(50, 75), duration_plt = 3)
 
-\dontrun{
+
 result <- assess_thrombocytopenia(input_files_path = pat_data,
                       plt_range = c(0.5, 0.75), duration_plt = 3)
 print(result[[1]])

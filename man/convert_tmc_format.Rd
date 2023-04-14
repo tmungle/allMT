@@ -32,6 +32,7 @@ Convert a maintenance therapy excel workbook (with individual sheets per cycle) 
 with longitudinal data of blood count parameters, absolute doses and dose intensities of administered drugs.
 }
 \examples{
+\dontrun{
 # As per ICiCLe-ALL-14 protocol (Reference PMID - 35101099):
 path_to_excel = paste0(system.file("extdata/tmc_data/", package = "allMT"), "/")
 save_path = paste0(path.expand('~'), "/")
@@ -39,7 +40,7 @@ convert_tmc_format(inputpath_to_excelfolder = path_to_excel,
                    exportpath_to_csvfolder = save_path,
                    daily_mp_dose = 60,
                    weekly_mtx_dose = 20)
-\dontrun{
+
 
 # As per ICiCLe-ALL-14 protocol (Reference PMID - 35101099):
 convert_tmc_format(inputpath_to_excelfolder = path_to_excel,

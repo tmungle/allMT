@@ -45,13 +45,14 @@ pat_data <- system.file("extdata/processed_data/", "UPN_915.csv", package = "all
 assess_stop_doses(input_files_path = pat_data,
                   anc_threshold = 0.5, plt_threshold = 50, hb_threshold = 7)
 
+\dontrun{
 assess_stop_doses(input_files_path = pat_data,
                   anc_threshold = 0.5)
 
 cohort_path = paste0(system.file("extdata/processed_data/", package = "allMT"), "/")
 assess_stop_doses(input_files_path = cohort_path,
                   anc_threshold = 0.5,plt_threshold = 50, hb_threshold = 7)
-
+}
 }
 \seealso{
 \code{\link[=assess_reduced_doses]{assess_reduced_doses()}}, \code{\link[=assess_increased_doses]{assess_increased_doses()}}

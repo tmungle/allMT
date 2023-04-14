@@ -14,6 +14,7 @@
 #'
 #' @seealso [convert_external_format()]
 #' @examples
+#' \dontrun{
 #' # As per ICiCLe-ALL-14 protocol (Reference PMID - 35101099):
 #' path_to_excel = paste0(system.file("extdata/tmc_data/", package = "allMT"), "/")
 #' save_path = paste0(path.expand('~'), "/")
@@ -21,7 +22,7 @@
 #'                    exportpath_to_csvfolder = save_path,
 #'                    daily_mp_dose = 60,
 #'                    weekly_mtx_dose = 20)
-#' \dontrun{
+#'
 #'
 #' # As per ICiCLe-ALL-14 protocol (Reference PMID - 35101099):
 #' convert_tmc_format(inputpath_to_excelfolder = path_to_excel,
@@ -89,20 +90,20 @@ convert_tmc_format <- function(inputpath_to_excelfolder, exportpath_to_csvfolder
 
         # Extracting global patient information
         Patient_no <- pat_df[["Cycle1"]][1,4]
-        print(Patient_no)
+        # print(Patient_no)
         Height <- pat_df[["Cycle1"]][2,2]
-        print(Height)
+        # print(Height)
         Weight <- pat_df[["Cycle1"]][3,2]
-        print(Weight)
+        # print(Weight)
         BSA <- pat_df[["Cycle1"]][4,2]
-        print(BSA)
+        # print(BSA)
         Start_date <- format(as.Date(as.numeric(pat_df[["Cycle1"]][5,3]),
                                      origin = '1899-12-30'), '%d/%m/%Y')
-        print(Start_date)
+        # print(Start_date)
         max_MP <- as.numeric((pat_df[["Cycle1"]][[4,2]])*(daily_mp_dose*7))
-        print(max_MP)
+        # print(max_MP)
         max_MTX <- as.numeric((pat_df[["Cycle1"]][[4,2]])*(weekly_mtx_dose))
-        print(max_MTX)
+        # print(max_MTX)
 
         Cycle <- MP <-  Dates <- MP_adj <- MTX <-NULL
 
