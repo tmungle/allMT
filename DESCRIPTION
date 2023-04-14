@@ -1,7 +1,7 @@
 Package: allMT
 Type: Package
 Title: Acute Lymphoblastic Leukemia Maintenance Therapy Analysis
-Version: 0.0.0.9000
+Version: 0.1.0
 Authors@R: 
    c(person(given = "Tushar", family = "Mungle", email = "tushar.mungle@gmail.com", role = c("aut", "cre"),
            comment = c(ORCID = "0000-0002-2109-3248")),
