@@ -31,7 +31,7 @@
 #' assess_stop_doses(input_files_path = pat_data,
 #'                   anc_threshold = 0.5, plt_threshold = 50, hb_threshold = 7)
 #'
-#' \dontrun{
+#' \donttest{
 #' assess_stop_doses(input_files_path = pat_data,
 #'                   anc_threshold = 0.5)
 #'

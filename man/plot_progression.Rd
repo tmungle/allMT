@@ -33,7 +33,7 @@ Creates a line graph (trends) for absolute neutrophil count (ANC), 6-Mercaptopur
 pat_data = system.file("extdata/processed_data/", "UPN_915.csv", package = "allMT")
 plot_progression(input_file_path = pat_data, anc_range = c(0.75,1.5), unit = "billion")
 
-\dontrun{
+\donttest{
 # As per BFM protocol (Reference PMID - 15902295):
 plot_progression(input_file_path = "../UPN1.csv", anc_range = c(2, NA), unit = "billion")
 

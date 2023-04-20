@@ -39,7 +39,7 @@ pat_data = system.file("extdata/processed_data/", "UPN_915.csv", package = "allM
 assess_neutropenia(input_files_path = pat_data,
                       anc_range = c(0.5, 0.75), duration_anc = 3)
 
-\dontrun{
+\donttest{
 
 cohort_path = paste0(system.file("extdata/processed_data/", package = "allMT"), "/")
 assess_neutropenia(input_files_path = cohort_path,

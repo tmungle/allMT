@@ -31,7 +31,7 @@
 #'assess_thrombocytopenia(input_files_path = pat_data,
 #'                       plt_range = c(50, 75), duration_plt = 3)
 #'
-#'\dontrun{
+#'\donttest{
 #'cohort_path = paste0(system.file("extdata/processed_data/", package = "allMT"), "/")
 #'assess_thrombocytopenia(input_files_path = cohort_path,
 #'                       plt_range = c(50, 75), duration_plt = 3)

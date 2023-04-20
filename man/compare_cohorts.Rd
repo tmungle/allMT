@@ -59,7 +59,7 @@ compare_cohorts(input_files_path = cohort_path,
         method = "M1", intervention_date = "2020-12-01",
         unit = "billion", anc_range = c(0.75, 1.5), dose_intensity_threshold = 100)
 
-\dontrun{
+\donttest{
 group_path = system.file("extdata/grouped_data/group_data.xlsx", package = "allMT")
 compare_cohorts(input_files_path = cohort_path,
        method = "M2", group_data_path = group_path,

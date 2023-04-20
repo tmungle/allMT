@@ -23,14 +23,14 @@
 #' pat_data = system.file("extdata/processed_data/", "UPN_916.csv", package = "allMT")
 #' summarize_cycle_progression(input_file_path = pat_data, anc_range = c(0.75, 1.5),
 #'                  unit = "billion")
-#' \dontrun{
+#' \donttest{
 #' summarize_cycle_progression(input_file_path = pat_data,
 #'                  anc_range = c(0.8, 2), unit = "billion")
 #'
 #' # As per BFM protocol (Reference PMID - 15902295):
 #' summarize_cycle_progression(input_file_path = pat_data,
 #'                  anc_range = c(2, NA),
-#'                  unit = "billion",)
+#'                  unit = "billion")
 #'
 #' # As per St Jude protocol (Reference PMID - 15902295):
 #' summarize_cycle_progression(input_file_path = pat_data,

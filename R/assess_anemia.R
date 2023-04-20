@@ -31,7 +31,7 @@
 #'assess_anemia(input_files_path = pat_data,
 #'                       hb_range = c(7, 8), duration_hb = 3)
 #'
-#'\dontrun{
+#'\donttest{
 #'
 #'cohort_path = paste0(system.file("extdata/processed_data/", package = "allMT"), "/")
 #'assess_anemia(input_files_path = cohort_path,

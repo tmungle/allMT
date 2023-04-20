@@ -26,7 +26,7 @@
 #' summarize_cohortMT (input_files_path = cohort_path, unit = "billion",
 #'                     anc_range = c(0.75, 1.5), dose_intensity_threshold = c(80, 100))
 #'
-#' \dontrun{
+#' \donttest{
 #' summarize_cohortMT(input_files_path = cohort_path,
 #'                  unit = "billion", anc_range = c(0.8, 2), dose_intensity_threshold = 150)
 #'

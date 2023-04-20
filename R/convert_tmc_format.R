@@ -14,10 +14,10 @@
 #'
 #' @seealso [convert_external_format()]
 #' @examples
-#' \dontrun{
+#' \donttest{
 #' # As per ICiCLe-ALL-14 protocol (Reference PMID - 35101099):
 #' path_to_excel = paste0(system.file("extdata/tmc_data/", package = "allMT"), "/")
-#' save_path = paste0(path.expand('~'), "/")
+#' save_path = paste0(tempdir(),"/")
 #' convert_tmc_format(inputpath_to_excelfolder = path_to_excel,
 #'                    exportpath_to_csvfolder = save_path,
 #'                    daily_mp_dose = 60,
@@ -162,7 +162,7 @@ convert_tmc_format <- function(inputpath_to_excelfolder, exportpath_to_csvfolder
 
       }
       message("Format switch complete")
-      rm(list=ls())
+      # rm(list=ls())
     },
     error = function(e) {
       message("Error")

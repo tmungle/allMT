@@ -33,7 +33,7 @@
 #'                      anc_range = c(0.5,0.75), plt_range = c(50,75),
 #'                      hb_range = c(7,8), reduction_factor = 50)
 #'
-#' \dontrun{
+#' \donttest{
 #' cohort_path = paste0(system.file("extdata/processed_data/", package = "allMT"), "/")
 #' assess_reduced_doses(input_files_path = cohort_path,
 #'                      anc_range = c(0.5,0.75), plt_range = c(50,75),

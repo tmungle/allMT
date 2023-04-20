@@ -21,29 +21,29 @@
 #' @examples
 #' # As per ICiCLe-ALL-14 protocol (Reference PMID - 35101099):
 #' path_to_excel = paste0(system.file("extdata/external_data/", package = "allMT"), "/")
+#' save_path = paste0(tempdir(),"/")
 #' path_to_bsa = system.file("extdata/external_data/", "BSA.xlsx", package = "allMT")
-#' save_path = paste0(system.file("extdata/processed_data/", package = "allMT"), "/")
 #' convert_external_format(inputpath_to_excelfolder = path_to_excel,
 #'                    exportpath_to_csvfolder = save_path,
 #'                    pat_data_file_path = path_to_bsa,
 #'                    daily_mp_dose = 60,
 #'                    weekly_mtx_dose = 20)
-#' \dontrun{
+#' \donttest{
 #' # As per ICiCLe-ALL-14 protocol (Reference PMID - 35101099):
 #' convert_external_format(inputpath_to_excelfolder = "../csv_trial/",
-#'                    exportpath_to_csvfolder = "../Exported csv/",
+#'                    exportpath_to_csvfolder = save_path,
 #'                    pat_data_file_path = "BSAFile.xlsx")
 #'
 #' # As per BFM protocol (Reference PMID - 15902295):
 #' convert_external_format(inputpath_to_excelfolder = "../csv_trial/",
-#'                    exportpath_to_csvfolder = "../Exported csv/",
+#'                    exportpath_to_csvfolder = save_path,
 #'                    pat_data_file_path = "BSAFile.xlsx",
 #'                    daily_mp_dose = 50,
 #'                    weekly_mtx_dose = 20)
 #'
 #' # As per St Jude protocol (Reference PMID - 15902295):
 #' convert_external_format(inputpath_to_excelfolder = "../csv_trial/",
-#'                    exportpath_to_csvfolder = "../Exported csv/",
+#'                    exportpath_to_csvfolder = save_path,
 #'                    pat_data_file_path = "BSAFile.xlsx",
 #'                    daily_mp_dose = 75,
 #'                    weekly_mtx_dose = 40)
@@ -168,7 +168,7 @@ convert_external_format <- function(inputpath_to_excelfolder, exportpath_to_csvf
           }
           message("Format switch complete")
         }
-        rm(list=ls())
+        # rm(list=ls())
       }
     },
     error = function(e) {

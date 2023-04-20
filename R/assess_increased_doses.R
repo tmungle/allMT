@@ -34,7 +34,7 @@
 #' assess_increased_doses(input_files_path = cohort_path, anc_threshold = 0.75,
 #'                       plt_threshold = 75, hb_threshold = 8,
 #'                       escalation_factor = 25, tolerated_dose_duration = 8)
-#' \dontrun{
+#' \donttest{
 #'
 #' pat_data = system.file("extdata/processed_data/", "UPN_914.csv", package = "allMT")
 #' assess_increased_doses (input_files_path = pat_data, anc_threshold = 0.75,
