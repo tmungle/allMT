@@ -110,21 +110,50 @@ Weighted mean absolute neutrophil count (ANC) and dose information is calculated
 <span class="r-wrn co"><span class="r-pr">#&gt;</span> <span class="warning">Warning: </span>Removed 1 rows containing missing values (`geom_point()`).</span>
 <span class="r-wrn co"><span class="r-pr">#&gt;</span> <span class="warning">Warning: </span>Removed 1 row containing missing values (`geom_path()`).</span>
 <span class="r-plt img"><img src="summarize_cycle_progression-1.png" alt="" width="700" height="433"></span>
-<span class="r-in"><span><span class="kw">if</span> <span class="op">(</span><span class="cn">FALSE</span><span class="op">)</span> <span class="op">{</span></span></span>
+<span class="r-in"><span><span class="co"># \donttest{</span></span></span>
 <span class="r-in"><span><span class="fu">summarize_cycle_progression</span><span class="op">(</span>input_file_path <span class="op">=</span> <span class="va">pat_data</span>,</span></span>
 <span class="r-in"><span>                 anc_range <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="fl">0.8</span>, <span class="fl">2</span><span class="op">)</span>, unit <span class="op">=</span> <span class="st">"billion"</span><span class="op">)</span></span></span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> NOTE: Analyzing provided input file</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Scale for <span style="color: #00BB00;">y</span> is already present.</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Adding another scale for <span style="color: #00BB00;">y</span>, which will replace the existing scale.</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Cycle progression summary graph created</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Quitting</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Bye Bye: Did you know that Saturn is second largest planet in our solar system :)?</span>
+<span class="r-wrn co"><span class="r-pr">#&gt;</span> <span class="warning">Warning: </span>Using <span style="color: #00BB00;">size</span> for a discrete variable is not advised.</span>
+<span class="r-wrn co"><span class="r-pr">#&gt;</span> <span class="warning">Warning: </span>Removed 1 rows containing missing values (`geom_rect()`).</span>
+<span class="r-wrn co"><span class="r-pr">#&gt;</span> <span class="warning">Warning: </span>Removed 1 rows containing missing values (`geom_vline()`).</span>
+<span class="r-wrn co"><span class="r-pr">#&gt;</span> <span class="warning">Warning: </span>Removed 1 rows containing missing values (`geom_point()`).</span>
+<span class="r-wrn co"><span class="r-pr">#&gt;</span> <span class="warning">Warning: </span>Removed 1 row containing missing values (`geom_path()`).</span>
+<span class="r-plt img"><img src="summarize_cycle_progression-2.png" alt="" width="700" height="433"></span>
 <span class="r-in"><span></span></span>
 <span class="r-in"><span><span class="co"># As per BFM protocol (Reference PMID - 15902295):</span></span></span>
 <span class="r-in"><span><span class="fu">summarize_cycle_progression</span><span class="op">(</span>input_file_path <span class="op">=</span> <span class="va">pat_data</span>,</span></span>
 <span class="r-in"><span>                 anc_range <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="fl">2</span>, <span class="cn">NA</span><span class="op">)</span>,</span></span>
-<span class="r-in"><span>                 unit <span class="op">=</span> <span class="st">"billion"</span>,<span class="op">)</span></span></span>
+<span class="r-in"><span>                 unit <span class="op">=</span> <span class="st">"billion"</span><span class="op">)</span></span></span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> NOTE: Analyzing provided input file</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Error</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> &lt;simpleError in if (anc_range[1] &gt; 100 | anc_range[2] &gt; 100) {    message("Warning: Are you sure the anc_range corresponds to the selected 'unit'?")}: missing value where TRUE/FALSE needed&gt;</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Quitting</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Bye Bye: Did you know that Saturn is second largest planet in our solar system :)?</span>
 <span class="r-in"><span></span></span>
 <span class="r-in"><span><span class="co"># As per St Jude protocol (Reference PMID - 15902295):</span></span></span>
 <span class="r-in"><span><span class="fu">summarize_cycle_progression</span><span class="op">(</span>input_file_path <span class="op">=</span> <span class="va">pat_data</span>,</span></span>
 <span class="r-in"><span>                 anc_range <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="fl">0.8</span>, <span class="fl">2</span><span class="op">)</span>,</span></span>
 <span class="r-in"><span>                 unit <span class="op">=</span> <span class="st">"billion"</span><span class="op">)</span></span></span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> NOTE: Analyzing provided input file</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Scale for <span style="color: #00BB00;">y</span> is already present.</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Adding another scale for <span style="color: #00BB00;">y</span>, which will replace the existing scale.</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Cycle progression summary graph created</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Quitting</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Bye Bye: Did you know that Saturn is second largest planet in our solar system :)?</span>
+<span class="r-wrn co"><span class="r-pr">#&gt;</span> <span class="warning">Warning: </span>Using <span style="color: #00BB00;">size</span> for a discrete variable is not advised.</span>
+<span class="r-wrn co"><span class="r-pr">#&gt;</span> <span class="warning">Warning: </span>Removed 1 rows containing missing values (`geom_rect()`).</span>
+<span class="r-wrn co"><span class="r-pr">#&gt;</span> <span class="warning">Warning: </span>Removed 1 rows containing missing values (`geom_vline()`).</span>
+<span class="r-wrn co"><span class="r-pr">#&gt;</span> <span class="warning">Warning: </span>Removed 1 rows containing missing values (`geom_point()`).</span>
+<span class="r-wrn co"><span class="r-pr">#&gt;</span> <span class="warning">Warning: </span>Removed 1 row containing missing values (`geom_path()`).</span>
+<span class="r-plt img"><img src="summarize_cycle_progression-3.png" alt="" width="700" height="433"></span>
 <span class="r-in"><span></span></span>
-<span class="r-in"><span><span class="op">}</span></span></span>
+<span class="r-in"><span><span class="co"># }</span></span></span>
 <span class="r-in"><span></span></span>
 </code></pre></div>
     </div>

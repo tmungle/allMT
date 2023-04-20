@@ -155,19 +155,136 @@
 <span class="r-out co"><span class="r-pr">#&gt;</span> &lt;/tbody&gt;</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> &lt;/table&gt;</span>
 <span class="r-in"><span></span></span>
-<span class="r-in"><span><span class="kw">if</span> <span class="op">(</span><span class="cn">FALSE</span><span class="op">)</span> <span class="op">{</span></span></span>
+<span class="r-in"><span><span class="co"># \donttest{</span></span></span>
 <span class="r-in"><span></span></span>
 <span class="r-in"><span><span class="va">cohort_path</span> <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/paste.html" class="external-link">paste0</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/system.file.html" class="external-link">system.file</a></span><span class="op">(</span><span class="st">"extdata/processed_data/"</span>, package <span class="op">=</span> <span class="st">"allMT"</span><span class="op">)</span>, <span class="st">"/"</span><span class="op">)</span></span></span>
 <span class="r-in"><span><span class="fu">assess_neutropenia</span><span class="op">(</span>input_files_path <span class="op">=</span> <span class="va">cohort_path</span>,</span></span>
 <span class="r-in"><span>                      anc_range <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="fl">0.5</span>, <span class="fl">0.75</span><span class="op">)</span>, duration_anc <span class="op">=</span> <span class="fl">3</span><span class="op">)</span></span></span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> NOTE: Including all files in input folder</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Quitting</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Bye Bye: Did you know that Earth is spherical in shape :)?</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> [[1]]</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>        ID Number of episodes Duration (weeks)</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 1   UPN_1                  0                0</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 2   UPN_2                  0                0</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 3 UPN_914                  1                3</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 4 UPN_915                  2                2</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 5 UPN_916                  3               10</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 6 UPN_917                  3                8</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 7 UPN_918                  0                0</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>   Number of long duration toxicity episodes Duration of long duration toxicity</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 1                                         0                                  0</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 2                                         0                                  0</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 3                                         1                                  3</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 4                                         0                                  0</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 5                                         3                                 10</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 6                                         1                                  4</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 7                                         0                                  0</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> [[2]]</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> =========================================  =======</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Parameter                                  Result </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> =========================================  =======</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Number of patients analyzed                7      </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Number of episodes                         1 [0-3]</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Duration (weeks)                           2 [0-6]</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Number of long duration toxicity episodes  0 [0-1]</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Duration of long duration toxicity         0 [0-4]</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> =========================================  =======</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> [[3]]</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> &lt;table class='gmisc_table' style='border-collapse: collapse; margin-top: 1em; margin-bottom: 1em;' &gt;</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> &lt;thead&gt;</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> &lt;tr&gt;&lt;td colspan='2' style='text-align: left;'&gt;</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Table: Neutropenia analysis&lt;/td&gt;&lt;/tr&gt;</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> &lt;tr&gt;</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> &lt;th style='background-color: #e6e6e6; border-bottom: 1px solid grey; border-top: 2px solid grey; text-align: center;'&gt;Parameter&lt;/th&gt;</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> &lt;th style='background-color: #e6e6e6; border-bottom: 1px solid grey; border-top: 2px solid grey; text-align: center;'&gt;Result&lt;/th&gt;</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> &lt;/tr&gt;</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> &lt;/thead&gt;</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> &lt;tbody&gt;</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> &lt;tr style='background-color: #ffffff;'&gt;</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> &lt;td style='width: 200px; background-color: #ffffff; text-align: left;'&gt;Number of patients analyzed&lt;/td&gt;</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> &lt;td style='width: 200px; background-color: #ffffff; text-align: center;'&gt;7&lt;/td&gt;</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> &lt;/tr&gt;</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> &lt;tr style='background-color: #e6e6e6;'&gt;</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> &lt;td style='width: 200px; background-color: #e6e6e6; text-align: left;'&gt;Number of episodes&lt;/td&gt;</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> &lt;td style='width: 200px; background-color: #e6e6e6; text-align: center;'&gt;1 [0-3]&lt;/td&gt;</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> &lt;/tr&gt;</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> &lt;tr style='background-color: #ffffff;'&gt;</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> &lt;td style='width: 200px; background-color: #ffffff; text-align: left;'&gt;Duration (weeks)&lt;/td&gt;</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> &lt;td style='width: 200px; background-color: #ffffff; text-align: center;'&gt;2 [0-6]&lt;/td&gt;</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> &lt;/tr&gt;</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> &lt;tr style='background-color: #e6e6e6;'&gt;</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> &lt;td style='width: 200px; background-color: #e6e6e6; text-align: left;'&gt;Number of long duration toxicity episodes&lt;/td&gt;</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> &lt;td style='width: 200px; background-color: #e6e6e6; text-align: center;'&gt;0 [0-1]&lt;/td&gt;</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> &lt;/tr&gt;</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> &lt;tr style='background-color: #ffffff;'&gt;</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> &lt;td style='width: 200px; background-color: #ffffff; border-bottom: 2px solid grey; text-align: left;'&gt;Duration of long duration toxicity&lt;/td&gt;</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> &lt;td style='width: 200px; background-color: #ffffff; border-bottom: 2px solid grey; text-align: center;'&gt;0 [0-4]&lt;/td&gt;</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> &lt;/tr&gt;</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> &lt;/tbody&gt;</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> &lt;/table&gt;</span>
 <span class="r-in"><span></span></span>
 <span class="r-in"><span></span></span>
 <span class="r-in"><span><span class="va">result</span> <span class="op">&lt;-</span> <span class="fu">assess_neutropenia</span><span class="op">(</span>input_files_path <span class="op">=</span> <span class="va">pat_data</span>,</span></span>
 <span class="r-in"><span>                      anc_range <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="fl">0.5</span>, <span class="fl">0.75</span><span class="op">)</span>, duration_anc <span class="op">=</span> <span class="fl">3</span><span class="op">)</span></span></span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> NOTE: Analyzing provided input file only</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Quitting</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Bye Bye: Did you know that Earth is spherical in shape :)?</span>
 <span class="r-in"><span><span class="fu"><a href="https://rdrr.io/r/base/print.html" class="external-link">print</a></span><span class="op">(</span><span class="va">result</span><span class="op">[[</span><span class="fl">1</span><span class="op">]</span><span class="op">]</span><span class="op">)</span></span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>        ID Number of episodes Duration (weeks)</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 1 UPN_915                  2                2</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>   Number of long duration toxicity episodes Duration of long duration toxicity</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 1                                         0                                  0</span>
 <span class="r-in"><span><span class="fu"><a href="https://rdrr.io/r/base/print.html" class="external-link">print</a></span><span class="op">(</span><span class="va">result</span><span class="op">[[</span><span class="fl">2</span><span class="op">]</span><span class="op">]</span><span class="op">)</span></span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> =========================================  =======</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Parameter                                  Result </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> =========================================  =======</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> ID                                         UPN_915</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Number of episodes                         2      </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Duration (weeks)                           2      </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Number of long duration toxicity episodes  0      </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Duration of long duration toxicity         0      </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> =========================================  =======</span>
 <span class="r-in"><span><span class="fu"><a href="https://rdrr.io/r/base/print.html" class="external-link">print</a></span><span class="op">(</span><span class="va">result</span><span class="op">[[</span><span class="fl">3</span><span class="op">]</span><span class="op">]</span><span class="op">)</span></span></span>
-<span class="r-in"><span><span class="op">}</span></span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> &lt;table class='gmisc_table' style='border-collapse: collapse; margin-top: 1em; margin-bottom: 1em;' &gt;</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> &lt;thead&gt;</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> &lt;tr&gt;&lt;td colspan='2' style='text-align: left;'&gt;</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Table: Neutropenia analysis&lt;/td&gt;&lt;/tr&gt;</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> &lt;tr&gt;</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> &lt;th style='background-color: #e6e6e6; border-bottom: 1px solid grey; border-top: 2px solid grey; text-align: center;'&gt;Parameter&lt;/th&gt;</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> &lt;th style='background-color: #e6e6e6; border-bottom: 1px solid grey; border-top: 2px solid grey; text-align: center;'&gt;Result&lt;/th&gt;</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> &lt;/tr&gt;</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> &lt;/thead&gt;</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> &lt;tbody&gt;</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> &lt;tr style='background-color: #ffffff;'&gt;</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> &lt;td style='width: 200px; background-color: #ffffff; text-align: left;'&gt;ID&lt;/td&gt;</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> &lt;td style='width: 200px; background-color: #ffffff; text-align: center;'&gt;UPN_915&lt;/td&gt;</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> &lt;/tr&gt;</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> &lt;tr style='background-color: #e6e6e6;'&gt;</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> &lt;td style='width: 200px; background-color: #e6e6e6; text-align: left;'&gt;Number of episodes&lt;/td&gt;</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> &lt;td style='width: 200px; background-color: #e6e6e6; text-align: center;'&gt;2&lt;/td&gt;</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> &lt;/tr&gt;</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> &lt;tr style='background-color: #ffffff;'&gt;</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> &lt;td style='width: 200px; background-color: #ffffff; text-align: left;'&gt;Duration (weeks)&lt;/td&gt;</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> &lt;td style='width: 200px; background-color: #ffffff; text-align: center;'&gt;2&lt;/td&gt;</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> &lt;/tr&gt;</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> &lt;tr style='background-color: #e6e6e6;'&gt;</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> &lt;td style='width: 200px; background-color: #e6e6e6; text-align: left;'&gt;Number of long duration toxicity episodes&lt;/td&gt;</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> &lt;td style='width: 200px; background-color: #e6e6e6; text-align: center;'&gt;0&lt;/td&gt;</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> &lt;/tr&gt;</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> &lt;tr style='background-color: #ffffff;'&gt;</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> &lt;td style='width: 200px; background-color: #ffffff; border-bottom: 2px solid grey; text-align: left;'&gt;Duration of long duration toxicity&lt;/td&gt;</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> &lt;td style='width: 200px; background-color: #ffffff; border-bottom: 2px solid grey; text-align: center;'&gt;0&lt;/td&gt;</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> &lt;/tr&gt;</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> &lt;/tbody&gt;</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> &lt;/table&gt;</span>
+<span class="r-in"><span><span class="co"># }</span></span></span>
 <span class="r-in"><span></span></span>
 </code></pre></div>
     </div>
