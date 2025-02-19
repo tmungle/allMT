@@ -123,7 +123,7 @@ childhood acute lymphoblastic leukemia: Clinical facts and fiction,”
 <span class="csl-left-margin">\[2\] </span><span
 class="csl-right-inline">T. D. Mungle, “Modelling clinical decision
 processes to optimise maintenance chemotherapy in children with acute
-lymphoblastic leukaemia,” PhD thesis, IIT Kharagpur, 2020.</span>
+lymphoblastic leukaemia,” [PhD thesis](https://github.com/tmungle/allMT/blob/master/PhD_Thesis_14MM91R12.pdf), IIT Kharagpur, 2020.</span>
 
 </div>
 
