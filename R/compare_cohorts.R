@@ -5,18 +5,18 @@
 #'
 #' @param input_files_path  Path to folder with MT csv files (in quotes)
 #' @param method Choose from "M1" or "M2".
-#'  \itemize{
+#'  \describe{
 #'            \item{"M1"} {= Comparison of cohorts that started MT therapy before or after a particular date of intervention (intervention_date).}
 #'            \item{"M2"} {= Comparison of MT therapy between pre-determined groups.}
 #'         }
 #' @param intervention_date Only applicable if method = "M1". Provide date in yyyy-mm-dd format (in quotes)
 #' @param unit Choose either "million" or "billion".
-#' \itemize{
+#' \describe{
 #'            \item{"million" = million cells/L (x\eqn{10^{6}} cells/L or cells/\eqn{\mu}l)}
 #'            \item{"billion" = billion cells/L (x\eqn{10^{9}} cells/L or x\eqn{10^{3}} cells/\eqn{\mu}l)}
 #' }
 #' @param anc_range Vector with lower and upper thresholds of absolute neutrophil count target range: (c(lower threshold, upper threshold))
-#'  \itemize{
+#'  \describe{
 #'            \item{Ensure units of anc_range and patient data (unit) match.}
 #'         }
 #' @param dose_intensity_threshold  numeric value of reference drug dose intensity (%).
@@ -26,7 +26,7 @@
 #' @return Comparative summary graph
 #'
 #' @note
-#'  \itemize{
+#'  \describe{
 #'          \item{If more than one chort need to be compared then only "M2" method is applicable}
 #'         }
 #'
