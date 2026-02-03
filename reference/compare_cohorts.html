@@ -63,14 +63,19 @@ weighted mean absolute neutrophil count (ANC) and dose information for each pati
 
 
 <dt id="arg-unit">unit<a class="anchor" aria-label="anchor" href="#arg-unit"></a></dt>
-<dd><p>Choose either "million" or "billion".</p><ul><li><p>"million" = million cells/L (x\(10^{6}\) cells/L or cells/\(\mu\)l)</p></li>
-<li><p>"billion" = billion cells/L (x\(10^{9}\) cells/L or x\(10^{3}\) cells/\(\mu\)l)</p></li>
-</ul></dd>
+<dd><p>Choose either "million" or "billion".</p><dl><dt>"million" = million cells/L (x\(10^{6}\) cells/L or cells/\(\mu\)l)</dt>
+<dd><p></p></dd>
+<dt>"billion" = billion cells/L (x\(10^{9}\) cells/L or x\(10^{3}\) cells/\(\mu\)l)</dt>
+<dd><p></p></dd>
+
+</dl></dd>
 
 
 <dt id="arg-anc-range">anc_range<a class="anchor" aria-label="anchor" href="#arg-anc-range"></a></dt>
-<dd><p>Vector with lower and upper thresholds of absolute neutrophil count target range: (c(lower threshold, upper threshold))</p><ul><li><p>Ensure units of anc_range and patient data (unit) match.</p></li>
-</ul></dd>
+<dd><p>Vector with lower and upper thresholds of absolute neutrophil count target range: (c(lower threshold, upper threshold))</p><dl><dt>Ensure units of anc_range and patient data (unit) match.</dt>
+<dd><p></p></dd>
+
+</dl></dd>
 
 
 <dt id="arg-dose-intensity-threshold">dose_intensity_threshold<a class="anchor" aria-label="anchor" href="#arg-dose-intensity-threshold"></a></dt>
@@ -78,9 +83,14 @@ weighted mean absolute neutrophil count (ANC) and dose information for each pati
 
 
 <dt id="arg-method">method<a class="anchor" aria-label="anchor" href="#arg-method"></a></dt>
-<dd><p>Choose from "M1" or "M2".</p><ul><li><p>"M1" = Comparison of cohorts that started MT therapy before or after a particular date of intervention (intervention_date).</p></li>
-<li><p>"M2" = Comparison of MT therapy between pre-determined groups.</p></li>
-</ul></dd>
+<dd><p>Choose from "M1" or "M2".</p><dl><dt>"M1"</dt>
+<dd><p></p></dd>
+= Comparison of cohorts that started MT therapy before or after a particular date of intervention (intervention_date).
+<dt>"M2"</dt>
+<dd><p></p></dd>
+= Comparison of MT therapy between pre-determined groups.
+
+</dl></dd>
 
 
 <dt id="arg-intervention-date">intervention_date<a class="anchor" aria-label="anchor" href="#arg-intervention-date"></a></dt>
@@ -99,8 +109,10 @@ Ensure "ID" and "Group" columns are present.</p></dd>
     <div class="section level2">
     <h2 id="note">Note<a class="anchor" aria-label="anchor" href="#note"></a></h2>
 
-<ul><li><p>If more than one chort need to be compared then only "M2" method is applicable</p></li>
-</ul></div>
+<dl><dt>If more than one chort need to be compared then only "M2" method is applicable</dt>
+<dd><p></p></dd>
+
+</dl></div>
     <div class="section level2">
     <h2 id="see-also">See also<a class="anchor" aria-label="anchor" href="#see-also"></a></h2>
     <div class="dont-index"><p><code><a href="summarize_cohortMT.html">summarize_cohortMT()</a></code></p></div>
@@ -113,10 +125,62 @@ Ensure "ID" and "Group" columns are present.</p></dd>
 <span class="r-in"><span>        method <span class="op">=</span> <span class="st">"M1"</span>, intervention_date <span class="op">=</span> <span class="st">"2020-12-01"</span>,</span></span>
 <span class="r-in"><span>        unit <span class="op">=</span> <span class="st">"billion"</span>, anc_range <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="fl">0.75</span>, <span class="fl">1.5</span><span class="op">)</span>, dose_intensity_threshold <span class="op">=</span> <span class="fl">100</span><span class="op">)</span></span></span>
 <span class="r-msg co"><span class="r-pr">#&gt;</span> NOTE: Including all files in input folder</span>
-<span class="r-msg co"><span class="r-pr">#&gt;</span> Comparative summary graph created</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Warning</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #0000BB; font-weight: bold;">&lt;warning/lifecycle_warning_deprecated&gt;</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BBBB00; font-weight: bold;">Warning</span><span style="font-weight: bold;">:</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Using `size` aesthetic for lines was deprecated in ggplot2 3.4.0.</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">ℹ</span> Please use `linewidth` instead.</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">ℹ</span> The deprecated feature was likely used in the <span style="color: #0000BB;">allMT</span> package.</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>   Please report the issue at <span style="color: #0000BB; font-style: italic;">&lt;https://github.com/tmungle/allMT/issues&gt;</span>.</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> ---</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="font-weight: bold;">Backtrace:</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #555555;">     </span>▆</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #555555;">  1. </span>└─<span style="font-weight: bold;">pkgdown</span>::build_site_github_pages(new_process = FALSE, install = FALSE)</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #555555;">  2. </span>  └─pkgdown::build_site(...)</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #555555;">  3. </span>    └─pkgdown:::build_site_local(...)</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #555555;">  4. </span>      └─pkgdown::build_reference(...)</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #555555;">  5. </span>        ├<span style="color: #949494;">─pkgdown:::unwrap_purrr_error(...)</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #555555;">  6. </span>        │ <span style="color: #949494;">└─</span><span style="color: #949494; font-weight: bold;">base</span><span style="color: #949494;">::withCallingHandlers(...)</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #555555;">  7. </span>        └─<span style="font-weight: bold;">purrr</span>::map(...)</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #555555;">  8. </span>          └─purrr:::map_("list", .x, .f, ..., .progress = .progress)</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #555555;">  9. </span>            ├<span style="color: #949494;">─purrr:::with_indexed_errors(...)</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #555555;"> 10. </span>            │ <span style="color: #949494;">└─</span><span style="color: #949494; font-weight: bold;">base</span><span style="color: #949494;">::withCallingHandlers(...)</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #555555;"> 11. </span>            ├<span style="color: #949494;">─</span><span style="color: #949494; font-weight: bold;">purrr</span><span style="color: #949494;">:::call_with_cleanup(...)</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #555555;"> 12. </span>            └─<span style="font-weight: bold;">pkgdown</span> (local) .f(.x[[i]], ...)</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #555555;"> 13. </span>              ├<span style="color: #949494;">─</span><span style="color: #949494; font-weight: bold;">base</span><span style="color: #949494;">::withCallingHandlers(...)</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #555555;"> 14. </span>              └─<span style="font-weight: bold;">pkgdown</span>:::data_reference_topic(...)</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #555555;"> 15. </span>                └─pkgdown:::run_examples(...)</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #555555;"> 16. </span>                  └─pkgdown:::highlight_examples(code, topic, env = env)</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #555555;"> 17. </span>                    └─<span style="font-weight: bold;">downlit</span>::evaluate_and_highlight(...)</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #555555;"> 18. </span>                      └─<span style="font-weight: bold;">evaluate</span>::evaluate(code, child_env(env), new_device = TRUE, output_handler = output_handler)</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #555555;"> 19. </span>                        ├<span style="color: #949494;">─</span><span style="color: #949494; font-weight: bold;">base</span><span style="color: #949494;">::withRestarts(...)</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #555555;"> 20. </span>                        │ <span style="color: #949494;">└─base (local) withRestartList(expr, restarts)</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #555555;"> 21. </span>                        │   <span style="color: #949494;">├─base (local) withOneRestart(withRestartList(expr, restarts[-nr]), restarts[[nr]])</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #555555;"> 22. </span>                        │   <span style="color: #949494;">│ └─base (local) doWithOneRestart(return(expr), restart)</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #555555;"> 23. </span>                        │   <span style="color: #949494;">└─base (local) withRestartList(expr, restarts[-nr])</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #555555;"> 24. </span>                        │     <span style="color: #949494;">└─base (local) withOneRestart(expr, restarts[[1L]])</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #555555;"> 25. </span>                        │       <span style="color: #949494;">└─base (local) doWithOneRestart(return(expr), restart)</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #555555;"> 26. </span>                        ├<span style="color: #949494;">─</span><span style="color: #949494; font-weight: bold;">evaluate</span><span style="color: #949494;">:::with_handlers(...)</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #555555;"> 27. </span>                        │ <span style="color: #949494;">├─</span><span style="color: #949494; font-weight: bold;">base</span><span style="color: #949494;">::eval(call)</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #555555;"> 28. </span>                        │ <span style="color: #949494;">│ └─base::eval(call)</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #555555;"> 29. </span>                        │ <span style="color: #949494;">└─base::withCallingHandlers(...)</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #555555;"> 30. </span>                        ├<span style="color: #949494;">─base::withVisible(eval(expr, envir))</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #555555;"> 31. </span>                        └─base::eval(expr, envir)</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #555555;"> 32. </span>                          └─base::eval(expr, envir)</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #555555;"> 33. </span>                            └─<span style="font-weight: bold;">allMT</span>::compare_cohorts(...)</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #555555;"> 34. </span>                              ├<span style="color: #949494;">─</span><span style="color: #949494; font-weight: bold;">base</span><span style="color: #949494;">::tryCatch(...)</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #555555;"> 35. </span>                              │ <span style="color: #949494;">└─base (local) tryCatchList(expr, classes, parentenv, handlers)</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #555555;"> 36. </span>                              │   <span style="color: #949494;">├─base (local) tryCatchOne(...)</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #555555;"> 37. </span>                              │   <span style="color: #949494;">│ └─base (local) doTryCatch(return(expr), name, parentenv, handler)</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #555555;"> 38. </span>                              │   <span style="color: #949494;">└─base (local) tryCatchList(expr, names[-nh], parentenv, handlers[-nh])</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #555555;"> 39. </span>                              │     <span style="color: #949494;">└─base (local) tryCatchOne(expr, names, parentenv, handlers[[1L]])</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #555555;"> 40. </span>                              │       <span style="color: #949494;">└─base (local) doTryCatch(return(expr), name, parentenv, handler)</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #555555;"> 41. </span>                              └─<span style="font-weight: bold;">allMT</span> (local) Graph(...)</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #555555;"> 42. </span>                                └─ggplot2::geom_hline(...)</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #555555;"> 43. </span>                                  └─ggplot2::layer(...)</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #555555;"> 44. </span>                                    └─ggplot2:::deprecate_warn0(...)</span>
 <span class="r-msg co"><span class="r-pr">#&gt;</span> Quitting</span>
 <span class="r-msg co"><span class="r-pr">#&gt;</span> Bye Bye: Did you know that space is silent :)?</span>
-<span class="r-plt img"><img src="compare_cohorts-1.png" alt="" width="700" height="433"></span>
 <span class="r-in"><span></span></span>
 <span class="r-in"><span><span class="co"># \donttest{</span></span></span>
 <span class="r-in"><span><span class="va">group_path</span> <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/system.file.html" class="external-link">system.file</a></span><span class="op">(</span><span class="st">"extdata/grouped_data/group_data.xlsx"</span>, package <span class="op">=</span> <span class="st">"allMT"</span><span class="op">)</span></span></span>
@@ -125,10 +189,64 @@ Ensure "ID" and "Group" columns are present.</p></dd>
 <span class="r-in"><span>       unit <span class="op">=</span> <span class="st">"billion"</span>, anc_range <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="fl">0.75</span>, <span class="fl">1.5</span><span class="op">)</span>, dose_intensity_threshold <span class="op">=</span> <span class="fl">80</span><span class="op">)</span></span></span>
 <span class="r-msg co"><span class="r-pr">#&gt;</span> NOTE: Including all files in input folder</span>
 <span class="r-msg co"><span class="r-pr">#&gt;</span> Joining with `by = join_by(Pat_ID)`</span>
-<span class="r-msg co"><span class="r-pr">#&gt;</span> Comparative summary graph created</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Warning</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #0000BB; font-weight: bold;">&lt;warning/lifecycle_warning_deprecated&gt;</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BBBB00; font-weight: bold;">Warning</span><span style="font-weight: bold;">:</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> The `size` argument of `element_rect()` is deprecated as of ggplot2 3.4.0.</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">ℹ</span> Please use the `linewidth` argument instead.</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">ℹ</span> The deprecated feature was likely used in the <span style="color: #0000BB;">allMT</span> package.</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>   Please report the issue at <span style="color: #0000BB; font-style: italic;">&lt;https://github.com/tmungle/allMT/issues&gt;</span>.</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> ---</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="font-weight: bold;">Backtrace:</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #555555;">     </span>▆</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #555555;">  1. </span>└─<span style="font-weight: bold;">pkgdown</span>::build_site_github_pages(new_process = FALSE, install = FALSE)</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #555555;">  2. </span>  └─pkgdown::build_site(...)</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #555555;">  3. </span>    └─pkgdown:::build_site_local(...)</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #555555;">  4. </span>      └─pkgdown::build_reference(...)</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #555555;">  5. </span>        ├<span style="color: #949494;">─pkgdown:::unwrap_purrr_error(...)</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #555555;">  6. </span>        │ <span style="color: #949494;">└─</span><span style="color: #949494; font-weight: bold;">base</span><span style="color: #949494;">::withCallingHandlers(...)</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #555555;">  7. </span>        └─<span style="font-weight: bold;">purrr</span>::map(...)</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #555555;">  8. </span>          └─purrr:::map_("list", .x, .f, ..., .progress = .progress)</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #555555;">  9. </span>            ├<span style="color: #949494;">─purrr:::with_indexed_errors(...)</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #555555;"> 10. </span>            │ <span style="color: #949494;">└─</span><span style="color: #949494; font-weight: bold;">base</span><span style="color: #949494;">::withCallingHandlers(...)</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #555555;"> 11. </span>            ├<span style="color: #949494;">─</span><span style="color: #949494; font-weight: bold;">purrr</span><span style="color: #949494;">:::call_with_cleanup(...)</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #555555;"> 12. </span>            └─<span style="font-weight: bold;">pkgdown</span> (local) .f(.x[[i]], ...)</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #555555;"> 13. </span>              ├<span style="color: #949494;">─</span><span style="color: #949494; font-weight: bold;">base</span><span style="color: #949494;">::withCallingHandlers(...)</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #555555;"> 14. </span>              └─<span style="font-weight: bold;">pkgdown</span>:::data_reference_topic(...)</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #555555;"> 15. </span>                └─pkgdown:::run_examples(...)</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #555555;"> 16. </span>                  └─pkgdown:::highlight_examples(code, topic, env = env)</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #555555;"> 17. </span>                    └─<span style="font-weight: bold;">downlit</span>::evaluate_and_highlight(...)</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #555555;"> 18. </span>                      └─<span style="font-weight: bold;">evaluate</span>::evaluate(code, child_env(env), new_device = TRUE, output_handler = output_handler)</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #555555;"> 19. </span>                        ├<span style="color: #949494;">─</span><span style="color: #949494; font-weight: bold;">base</span><span style="color: #949494;">::withRestarts(...)</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #555555;"> 20. </span>                        │ <span style="color: #949494;">└─base (local) withRestartList(expr, restarts)</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #555555;"> 21. </span>                        │   <span style="color: #949494;">├─base (local) withOneRestart(withRestartList(expr, restarts[-nr]), restarts[[nr]])</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #555555;"> 22. </span>                        │   <span style="color: #949494;">│ └─base (local) doWithOneRestart(return(expr), restart)</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #555555;"> 23. </span>                        │   <span style="color: #949494;">└─base (local) withRestartList(expr, restarts[-nr])</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #555555;"> 24. </span>                        │     <span style="color: #949494;">└─base (local) withOneRestart(expr, restarts[[1L]])</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #555555;"> 25. </span>                        │       <span style="color: #949494;">└─base (local) doWithOneRestart(return(expr), restart)</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #555555;"> 26. </span>                        ├<span style="color: #949494;">─</span><span style="color: #949494; font-weight: bold;">evaluate</span><span style="color: #949494;">:::with_handlers(...)</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #555555;"> 27. </span>                        │ <span style="color: #949494;">├─</span><span style="color: #949494; font-weight: bold;">base</span><span style="color: #949494;">::eval(call)</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #555555;"> 28. </span>                        │ <span style="color: #949494;">│ └─base::eval(call)</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #555555;"> 29. </span>                        │ <span style="color: #949494;">└─base::withCallingHandlers(...)</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #555555;"> 30. </span>                        ├<span style="color: #949494;">─base::withVisible(eval(expr, envir))</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #555555;"> 31. </span>                        └─base::eval(expr, envir)</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #555555;"> 32. </span>                          └─base::eval(expr, envir)</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #555555;"> 33. </span>                            └─<span style="font-weight: bold;">allMT</span>::compare_cohorts(...)</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #555555;"> 34. </span>                              ├<span style="color: #949494;">─</span><span style="color: #949494; font-weight: bold;">base</span><span style="color: #949494;">::tryCatch(...)</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #555555;"> 35. </span>                              │ <span style="color: #949494;">└─base (local) tryCatchList(expr, classes, parentenv, handlers)</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #555555;"> 36. </span>                              │   <span style="color: #949494;">├─base (local) tryCatchOne(...)</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #555555;"> 37. </span>                              │   <span style="color: #949494;">│ └─base (local) doTryCatch(return(expr), name, parentenv, handler)</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #555555;"> 38. </span>                              │   <span style="color: #949494;">└─base (local) tryCatchList(expr, names[-nh], parentenv, handlers[-nh])</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #555555;"> 39. </span>                              │     <span style="color: #949494;">└─base (local) tryCatchOne(expr, names, parentenv, handlers[[1L]])</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #555555;"> 40. </span>                              │       <span style="color: #949494;">└─base (local) doTryCatch(return(expr), name, parentenv, handler)</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #555555;"> 41. </span>                              └─<span style="font-weight: bold;">allMT</span> (local) Graph(...)</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #555555;"> 42. </span>                                ├<span style="color: #949494;">─ggplot2::theme(...)</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #555555;"> 43. </span>                                │ <span style="color: #949494;">└─ggplot2:::find_args(..., complete = NULL, validate = NULL)</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #555555;"> 44. </span>                                │   <span style="color: #949494;">└─</span><span style="color: #949494; font-weight: bold;">base</span><span style="color: #949494;">::mget(args, envir = env)</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #555555;"> 45. </span>                                └─ggplot2::element_rect(...)</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #555555;"> 46. </span>                                  └─ggplot2:::deprecate_warn0("3.4.0", "element_rect(size)", "element_rect(linewidth)")</span>
 <span class="r-msg co"><span class="r-pr">#&gt;</span> Quitting</span>
 <span class="r-msg co"><span class="r-pr">#&gt;</span> Bye Bye: Did you know that space is silent :)?</span>
-<span class="r-plt img"><img src="compare_cohorts-2.png" alt="" width="700" height="433"></span>
 <span class="r-in"><span><span class="co"># }</span></span></span>
 </code></pre></div>
     </div>
@@ -141,7 +259,7 @@ Ensure "ID" and "Group" columns are present.</p></dd>
 </div>
 
 <div class="pkgdown-footer-right">
-  <p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.1.1.</p>
+  <p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.2.0.</p>
 </div>
 
     </footer></div>
