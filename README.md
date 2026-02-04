@@ -4,9 +4,10 @@
 # allMT
 
 <!-- badges: start -->
-
-[//]:[![R-CMD-check](https://github.com/tmungle/allMT/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/tmungle/allMT/actions/workflows/R-CMD-check.yaml)
 [![CRAN status](https://www.r-pkg.org/badges/version/allMT)](https://CRAN.R-project.org/package=allMT)
+[![CRAN downloads](https://cranlogs.r-pkg.org/badges/grand-total/allMT)](https://cran.r-project.org/package=allMT)
+[![CRAN downloads monthly](https://cranlogs.r-pkg.org/badges/last-month/allMT)](https://cran.r-project.org/package=allMT)
+[![R-CMD-check](https://github.com/tmungle/allMT/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/tmungle/allMT/actions)
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 <!-- badges: end -->
 
