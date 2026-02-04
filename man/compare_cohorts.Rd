@@ -19,22 +19,21 @@ compare_cohorts(
 
 \item{unit}{Choose either "million" or "billion".
 \describe{
-\item{"million" = million cells/L (x\eqn{10^{6}} cells/L or cells/\eqn{\mu}l)}
-\item{"billion" = billion cells/L (x\eqn{10^{9}} cells/L or x\eqn{10^{3}} cells/\eqn{\mu}l)}
+\item{million}{Million cells/L (x\eqn{10^{6}} cells/L or cells/\eqn{\mu}l)}
+\item{billion}{Billion cells/L (x\eqn{10^{9}} cells/L or x\eqn{10^{3}} cells/\eqn{\mu}l)}
 }}
 
 \item{anc_range}{Vector with lower and upper thresholds of absolute neutrophil count target range: (c(lower threshold, upper threshold))
 \describe{
-\item{Ensure units of anc_range and patient data (unit) match.}
+\item{Note}{Ensure units of anc_range and patient data (unit) match.}
 }}
 
 \item{dose_intensity_threshold}{numeric value of reference drug dose intensity (\%).}
 
 \item{method}{Choose from "M1" or "M2".
 \describe{
-\item{"M1"} {= Comparison of cohorts that started MT therapy before or after a particular date of intervention (intervention_date).}
-\item{"M2"} {= Comparison of MT therapy between pre-determined groups.}
-}}
+\item{M1}{Comparison of cohorts that started MT therapy before or after a particular date of intervention (intervention_date).}
+\item{M2}{Comparison of MT therapy between pre-determined groups.}}}
 
 \item{intervention_date}{Only applicable if method = "M1". Provide date in yyyy-mm-dd format (in quotes)}
 
@@ -50,7 +49,7 @@ weighted mean absolute neutrophil count (ANC) and dose information for each pati
 }
 \note{
 \describe{
-\item{If more than one chort need to be compared then only "M2" method is applicable}
+\item{Note}{If more than one chort need to be compared then only "M2" method is applicable}
 }
 }
 \examples{
