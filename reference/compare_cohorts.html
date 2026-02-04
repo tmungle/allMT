@@ -63,17 +63,20 @@ weighted mean absolute neutrophil count (ANC) and dose information for each pati
 
 
 <dt id="arg-unit">unit<a class="anchor" aria-label="anchor" href="#arg-unit"></a></dt>
-<dd><p>Choose either "million" or "billion".</p><dl><dt>"million" = million cells/L (x\(10^{6}\) cells/L or cells/\(\mu\)l)</dt>
-<dd><p></p></dd>
-<dt>"billion" = billion cells/L (x\(10^{9}\) cells/L or x\(10^{3}\) cells/\(\mu\)l)</dt>
-<dd><p></p></dd>
+<dd><p>Choose either "million" or "billion".</p><dl><dt>million</dt>
+<dd><p>Million cells/L (x\(10^{6}\) cells/L or cells/\(\mu\)l)</p></dd>
+
+<dt>billion</dt>
+<dd><p>Billion cells/L (x\(10^{9}\) cells/L or x\(10^{3}\) cells/\(\mu\)l)</p></dd>
+
 
 </dl></dd>
 
 
 <dt id="arg-anc-range">anc_range<a class="anchor" aria-label="anchor" href="#arg-anc-range"></a></dt>
-<dd><p>Vector with lower and upper thresholds of absolute neutrophil count target range: (c(lower threshold, upper threshold))</p><dl><dt>Ensure units of anc_range and patient data (unit) match.</dt>
-<dd><p></p></dd>
+<dd><p>Vector with lower and upper thresholds of absolute neutrophil count target range: (c(lower threshold, upper threshold))</p><dl><dt>Note</dt>
+<dd><p>Ensure units of anc_range and patient data (unit) match.</p></dd>
+
 
 </dl></dd>
 
@@ -83,12 +86,11 @@ weighted mean absolute neutrophil count (ANC) and dose information for each pati
 
 
 <dt id="arg-method">method<a class="anchor" aria-label="anchor" href="#arg-method"></a></dt>
-<dd><p>Choose from "M1" or "M2".</p><dl><dt>"M1"</dt>
-<dd><p></p></dd>
-= Comparison of cohorts that started MT therapy before or after a particular date of intervention (intervention_date).
-<dt>"M2"</dt>
-<dd><p></p></dd>
-= Comparison of MT therapy between pre-determined groups.
+<dd><p>Choose from "M1" or "M2".</p><dl><dt>M1</dt>
+<dd><p>Comparison of cohorts that started MT therapy before or after a particular date of intervention (intervention_date).</p></dd>
+
+<dt>M2</dt>
+<dd><p>Comparison of MT therapy between pre-determined groups.</p></dd>
 
 </dl></dd>
 
@@ -109,8 +111,9 @@ Ensure "ID" and "Group" columns are present.</p></dd>
     <div class="section level2">
     <h2 id="note">Note<a class="anchor" aria-label="anchor" href="#note"></a></h2>
 
-<dl><dt>If more than one chort need to be compared then only "M2" method is applicable</dt>
-<dd><p></p></dd>
+<dl><dt>Note</dt>
+<dd><p>If more than one chort need to be compared then only "M2" method is applicable</p></dd>
+
 
 </dl></div>
     <div class="section level2">

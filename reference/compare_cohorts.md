@@ -28,22 +28,23 @@ compare_cohorts(
 
   Choose either "million" or "billion".
 
-  "million" = million cells/L (x\\10^{6}\\ cells/L or cells/\\\mu\\l)
+  million
 
-  :   
+  :   Million cells/L (x\\10^{6}\\ cells/L or cells/\\\mu\\l)
 
-  "billion" = billion cells/L (x\\10^{9}\\ cells/L or x\\10^{3}\\ cells/\\\mu\\l)
+  billion
 
-  :   
+  :   Billion cells/L (x\\10^{9}\\ cells/L or x\\10^{3}\\
+      cells/\\\mu\\l)
 
 - anc_range:
 
   Vector with lower and upper thresholds of absolute neutrophil count
   target range: (c(lower threshold, upper threshold))
 
-  Ensure units of anc_range and patient data (unit) match.
+  Note
 
-  :   
+  :   Ensure units of anc_range and patient data (unit) match.
 
 - dose_intensity_threshold:
 
@@ -53,13 +54,14 @@ compare_cohorts(
 
   Choose from "M1" or "M2".
 
-  "M1"
+  M1
 
-  :   
+  :   Comparison of cohorts that started MT therapy before or after a
+      particular date of intervention (intervention_date).
 
-  "M2"
+  M2
 
-  :   
+  :   Comparison of MT therapy between pre-determined groups.
 
 - intervention_date:
 
@@ -77,8 +79,10 @@ Comparative summary graph
 
 ## Note
 
-- If more than one chort need to be compared then only "M2" method is
-  applicable:
+- Note:
+
+  If more than one chort need to be compared then only "M2" method is
+  applicable
 
 ## See also
 
